@@ -1,8 +1,21 @@
 main: fr.wixonic.walkerschatevent.Main
-api-version: "1.20"
-version: 1.0.0
+api-version: 1.20
+version: v0.1.0
 
 author: Wixonic
-name: W47K3R5-Chat-Events
-description: A custom Chat Event for Alan Walker's Minecraft server
-website: "https://github.com/Wixonic/WalkersChatEvents"
+name: W47K3R5-Chat-Event
+description: A custom chat event plugin for Alan Walker's Minecraft server
+website: https://github.com/Wixonic/WalkersChatEvent
+
+commands:
+    chatevent:
+        aliases: chev
+        description: Starts a chat event
+        usage: /<command>
+        permission: chatevent.create
+        permission-message: You do not have permission to use this command.
+
+permissions:
+    chatevent.create:
+        description: Allows to create a chat event
+        default: op
