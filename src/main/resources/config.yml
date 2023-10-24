@@ -5,12 +5,11 @@ delay: 600-1200 # Delay in seconds between two chat events, defaults to 0.5-1 da
 
 questions:
     faded-release:
-        answers: # Answers are not case-sensitive
+        answers: # Answers are not case-sensitive, one reward per answer
             - 2015
         expires: 10 # Time to answer the question (in seconds)
-        reward: 1000
+        reward: 1000 # Reward PER answer
         text: When Faded has been released? (year)
-        winners: 1 # Sets to -1 to allow everyone to win until the timer expires
     
     the-spectre-release:
         answers:
@@ -18,4 +17,66 @@ questions:
         expires: 10
         reward: 1500
         text: When The Spectre has been released? (year)
-        winners: 1
+        
+    alone-release:
+        answers:
+            - 2016
+        expires: 10
+        reward: 1500
+        text: When Alone has been released? (year)
+    
+    songs-in-walker-racing-league:
+        answers:
+            - Don't You Hold Me Down
+            - Finish Lines
+            - Jump Start
+            - Running Out of Roses
+            - Space Melody
+            - Sweet Dreams
+        expires: 30
+        reward: 2500
+        text: Gives a song from the Walker Racing League.
+        
+    three-first-words-alone-part-ii:
+        answers:
+            - We were young
+        expires: 10
+        reward: 7500
+        text: What are Ava Max's first words in Alone Part II?
+    
+    fake-a-smile-singer:
+        answers:
+            - Salem Ilese
+        expires: 10
+        reward: 3000
+        text: Who is the singer in Fake a Smile?
+    
+    first-ncs-songs:
+        answers:
+            - Fade
+            - Force
+            - Spectre
+        expires: 15
+        reward: 1000
+        text: What was the first music Alan published on No Copyright Songs (NCS)?
+        
+    new-ncs-contract-song:
+        answers:
+            - Dreamer
+        expires: 10
+        reward: 5000
+        text: On April 7, 2023, Alan re-signed with No Copyright Songs (NCS) and released a song, which is called...
+    
+    w47k3r5:
+        answers:
+            - w47k3r5
+        expires: 10
+        reward: 2000
+        text: "What is the obfuscated word? §kWALKERS§r j01n"
+    
+    alan-nickname:
+        answers:
+            - DJ Walkzz
+        expires: 10
+        reward: 7500
+        text: What is Alan's first nickname?

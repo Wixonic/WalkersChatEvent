@@ -30,9 +30,9 @@ public final class Main extends JavaPlugin {
 		Main.question.reward = Main.configManager.getInt("questions." + key + ".reward");
 		Main.question.text = Main.configManager.getString("questions." + key + ".text");
 		Main.question.winners = Main.configManager.getInt("questions." + key + ".winners");
-		
+
 		Bukkit.getLogger().warning(Main.question.toString());
-		
+
 		Main.question.start();
 	}
 
@@ -49,8 +49,10 @@ public final class Main extends JavaPlugin {
 			}
 		} else delay = Integer.parseInt(string);
 
-		Main.scheduledExecutor.schedule(Main::loop, delay, TimeUnit.SECONDS);
-		Main.execute();
+		Main.scheduledExecutor.schedule(() -> {
+			Main.execute();
+			Main.loop();
+		}, delay, TimeUnit.SECONDS);
 	}
 
 	public static Main getInstance() {
