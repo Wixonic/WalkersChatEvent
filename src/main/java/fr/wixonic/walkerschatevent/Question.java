@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public final class Question {
-	private final static MessageListener listener = new MessageListener();
+	public final static MessageListener listener = new MessageListener();
 
 	public List<String> answers;
 	public int expires;

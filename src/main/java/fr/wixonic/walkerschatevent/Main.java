@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 public final class Main extends JavaPlugin {
 	private static final ScheduledExecutorService scheduledExecutor = Executors.newSingleThreadScheduledExecutor();
 	public static ConfigurationManager configManager;
+
 	public static Economy economy;
 	private static Main instance;
 	private static Question question;
@@ -24,12 +25,14 @@ public final class Main extends JavaPlugin {
 		String key = keys.get(new Random().nextInt(0, keys.size()));
 
 		Main.question = new Question();
-		Main.question.answers = Main.configManager.getList("questions." + key + ".answe rs");
+		Main.question.answers = Main.configManager.getList("questions." + key + ".answers");
 		Main.question.expires = Main.configManager.getInt("questions." + key + ".expires");
 		Main.question.reward = Main.configManager.getInt("questions." + key + ".reward");
 		Main.question.text = Main.configManager.getString("questions." + key + ".text");
 		Main.question.winners = Main.configManager.getInt("questions." + key + ".winners");
-
+		
+		Bukkit.getLogger().warning(Main.question.toString());
+		
 		Main.question.start();
 	}
 
@@ -69,6 +72,7 @@ public final class Main extends JavaPlugin {
 		this.saveConfig();
 
 		if (Main.configManager.getBoolean("enabled")) Main.loop();
+		this.getServer().getPluginManager().registerEvents(Question.listener, this);
 		Objects.requireNonNull(this.getCommand("chatevent")).setExecutor(new ChatEvent());
 	}
 

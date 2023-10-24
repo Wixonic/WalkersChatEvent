@@ -9,9 +9,7 @@ questions:
             - 2015
         expires: 10 # Time to answer the question (in seconds)
         reward: 1000
-        text: |
-            When Faded has been released?
-            Answer by sending the year in chat.
+        text: When Faded has been released? (year)
         winners: 1 # Sets to -1 to allow everyone to win until the timer expires
     
     the-spectre-release:
@@ -19,7 +17,5 @@ questions:
             - 2017
         expires: 10
         reward: 1500
-        text: |
-            When The Spectre has been released?
-            Answer by sending the year in chat.
+        text: When The Spectre has been released? (year)
         winners: 1

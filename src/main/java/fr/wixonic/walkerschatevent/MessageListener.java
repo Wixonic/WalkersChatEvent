@@ -1,5 +1,6 @@
 package fr.wixonic.walkerschatevent;
 
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -10,11 +11,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 
-final class MessageListener implements Listener {
+public final class MessageListener implements Listener {
 	private final Map<String, Consumer<Player>> answers = new HashMap<>();
 
 	@EventHandler
 	public void onChat(AsyncPlayerChatEvent event) {
+		Bukkit.getLogger().warning(event.getMessage().toLowerCase().replaceAll(" ", ""));
+
 		Consumer<Player> answer = this.answers.get(event.getMessage().toLowerCase().replaceAll(" ", ""));
 		if (answer != null) answer.accept(event.getPlayer());
 	}
