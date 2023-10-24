@@ -1,0 +1,25 @@
+# Configuration file for W47K3R5 Chat Events
+
+enabled: true # Enables automatic chat events
+delay: 600-1200 # Delay in seconds between two chat events, defaults to 0.5-1 days (10-20 minutes)
+
+questions:
+    faded-release:
+        answers: # Answers are not case-sensitive
+            - 2015
+        expires: 10 # Time to answer the question (in seconds)
+        reward: 1000
+        text: |
+            When Faded has been released?
+            Answer by sending the year in chat.
+        winners: 1 # Sets to -1 to allow everyone to win until the timer expires
+    
+    the-spectre-release:
+        answers:
+            - 2017
+        expires: 10
+        reward: 1500
+        text: |
+            When The Spectre has been released?
+            Answer by sending the year in chat.
+        winners: 1
