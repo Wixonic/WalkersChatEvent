@@ -1,4 +1,4 @@
-# WalkersChatEvent
+# W47K3R5 Chat Event
 
 > A custom chat event plugin for Alan Walker's Minecraft server
 
