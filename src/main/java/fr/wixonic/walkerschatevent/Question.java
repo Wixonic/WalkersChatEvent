@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-
 public final class Question {
 	public final static MessageListener listener = new MessageListener();
 
