@@ -22,7 +22,7 @@ public final class Question {
 	}
 
 	public void start() {
-		Bukkit.broadcastMessage("§3" + this.text + "\n§rAnswer this question to win $" + this.reward);
+		Bukkit.broadcastMessage("§3" + this.text + "\n§r§7Answer this question to win $" + this.reward);
 		this.answers.replaceAll(Question::format);
 		
 		Question.listener.listenTo(answers, (Player player, String answer) -> {
@@ -30,7 +30,7 @@ public final class Question {
 			this.answers.remove(answer);
 			this.rewards(player);
 
-			if (this.answers.isEmpty()) Bukkit.broadcastMessage("§3The chat event is over!");
+			if (this.answers.isEmpty()) Bukkit.broadcastMessage("§6The chat event is over!");
 			else Bukkit.broadcastMessage("§6" + this.answers.size() + " answer" + (this.answers.size() > 1 ? "s" : "") + " remaining!");
 		});
 
@@ -45,7 +45,7 @@ public final class Question {
 	public void stop() {
 		if (!this.answers.isEmpty()) {
 			Question.listener.stopListeningTo(answers);
-			Bukkit.broadcastMessage("§4The chat event is over!");
+			Bukkit.broadcastMessage("§3The chat event is over!");
 		}
 	}
 }

@@ -31,8 +31,6 @@ public final class Main extends JavaPlugin {
 		Main.question.text = Main.configManager.getString("questions." + key + ".text");
 		Main.question.winners = Main.configManager.getInt("questions." + key + ".winners");
 
-		Bukkit.getLogger().warning(Main.question.toString());
-
 		Main.question.start();
 	}
 
@@ -76,6 +74,8 @@ public final class Main extends JavaPlugin {
 		if (Main.configManager.getBoolean("enabled")) Main.loop();
 		this.getServer().getPluginManager().registerEvents(Question.listener, this);
 		Objects.requireNonNull(this.getCommand("chatevent")).setExecutor(new ChatEvent());
+
+		Bukkit.getLogger().info(Main.configManager.getKeys("questions").size() + " questions loaded");
 	}
 
 	private boolean setupEconomy() {

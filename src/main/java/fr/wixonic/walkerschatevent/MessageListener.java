@@ -16,7 +16,7 @@ public final class MessageListener implements Listener {
 	@EventHandler
 	public void onChat(AsyncPlayerChatEvent event) {
 		String key = Question.format(event.getMessage());
-
+		
 		BiConsumer<Player, String> answer = this.answers.get(key);
 		if (answer != null) answer.accept(event.getPlayer(), key);
 	}

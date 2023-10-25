@@ -15,15 +15,22 @@ questions:
         answers:
             - "2017"
         expires: 10
-        reward: 1500
+        reward: 1000
         text: "When The Spectre has been released? (year)"
-        
+    
     alone-release:
         answers:
             - "2016"
         expires: 10
-        reward: 1500
+        reward: 1000
         text: "When Alone has been released? (year)"
+        
+    different-world-release:
+        answers:
+            - "2016"
+        expires: 10
+        reward: 1000
+        text: "When Different World has been released? (year)"
     
     songs-in-walker-racing-league:
         answers:
@@ -36,7 +43,7 @@ questions:
         expires: 30
         reward: 2500
         text: "Gives a song from the Walker Racing League."
-        
+    
     three-first-words-alone-part-ii:
         answers:
             - "We were young"
@@ -58,8 +65,8 @@ questions:
             - "Spectre"
         expires: 15
         reward: 1000
-        text: "What was the first music Alan published on No Copyright Songs (NCS)?"
-        
+        text: "What was the three first songsAlan published on No Copyright Songs (NCS)?"
+    
     new-ncs-contract-song:
         answers:
             - "Dreamer"
@@ -72,7 +79,7 @@ questions:
             - "w47k3r5"
         expires: 10
         reward: 2000
-        text: "What is the hidden word: §kABCDEF§k j01n"
+        text: "What is the hidden word: §kNoCheat§r§3 j01n"
     
     alan-nickname:
         answers:
@@ -81,18 +88,18 @@ questions:
         reward: 3000
         text: "What is Alan's first nickname?"
 
- 	alan-full-name:
-  		answers:
-			- "Alan Olav Walker"
-   		expires: 10
-	 	reward: 2000
-   		text: "What is Alan's full name?"
-
-  	are-you-lonely-featuring:
-   		answers:
-	 		- "Steve Aoki
-			- "ISÁK"
-   			- "Omar Noir"
-		expires: 10
-  		reward: 1500
-		text: "Alan Walker released Are You Lonely in collaboration with..."
+    alan-full-name:
+        answers:
+            - "Alan Olav Walker"
+        expires: 10
+        reward: 2000
+        text: "What is Alan's full name?"
+    
+    are-you-lonely-artists:
+        answers:
+            - "Steve Aoki"
+            - "ISÁK"
+            - "Omar Noir"
+        expires: 10
+        reward: 1500
+        text: "Alan Walker released Are You Lonely in collaboration with..."
