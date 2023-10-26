@@ -22,8 +22,7 @@ public final class ConfigurationManager {
 			}
 		}
 	}
-
-
+	
 	public boolean getBoolean(String key) {
 		return this.config.getBoolean(key);
 	}
@@ -42,10 +41,5 @@ public final class ConfigurationManager {
 
 	public String getString(String key) {
 		return this.config.getString(key);
-	}
-
-
-	public void set(String key, Object value) {
-		this.config.set(key, value);
 	}
 }

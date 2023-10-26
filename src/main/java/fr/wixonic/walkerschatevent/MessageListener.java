@@ -21,10 +21,6 @@ public final class MessageListener implements Listener {
 		if (answer != null) answer.accept(event.getPlayer(), key);
 	}
 
-	public void listenTo(String answer, BiConsumer<Player, String> listener) {
-		this.answers.put(Question.format(answer), listener);
-	}
-
 	public void listenTo(List<String> answers, BiConsumer<Player, String> listener) {
 		for (String answer : answers) {
 			this.answers.put(Question.format(answer), listener);

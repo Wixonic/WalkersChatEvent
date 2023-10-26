@@ -42,7 +42,7 @@ public final class Main extends JavaPlugin {
 			try {
 				delay = new Random().nextInt(Integer.parseInt(string.split("-")[0]), Integer.parseInt(string.split("-")[1]));
 			} catch (Exception ignored) {
-				Bukkit.getLogger().warning("Invalid field in config.yml: delay");
+				Main.getInstance().getLogger().warning("Invalid field in config.yml: delay");
 				delay = 1000;
 			}
 		} else delay = Integer.parseInt(string);
@@ -62,7 +62,7 @@ public final class Main extends JavaPlugin {
 		Main.instance = this;
 
 		if (!this.setupEconomy()) {
-			this.getLogger().severe(String.format("[%s] - Disabled due to no Vault dependency found", this.getDescription().getName()));
+			this.getLogger().severe("Disabled due to no Vault dependency found");
 			this.getServer().getPluginManager().disablePlugin(this);
 			return;
 		}
@@ -75,7 +75,7 @@ public final class Main extends JavaPlugin {
 		this.getServer().getPluginManager().registerEvents(Question.listener, this);
 		Objects.requireNonNull(this.getCommand("chatevent")).setExecutor(new ChatEvent());
 
-		Bukkit.getLogger().info(Main.configManager.getKeys("questions").size() + " questions loaded");
+		this.getLogger().info(Main.configManager.getKeys("questions").size() + " questions loaded");
 	}
 
 	private boolean setupEconomy() {
