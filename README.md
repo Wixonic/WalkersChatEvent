@@ -3,7 +3,6 @@
 [![Last stable release](https://img.shields.io/github/v/release/Wixonic/WalkersChatEvent?display_name=tag&label=Last%20stable%20release)](https://github.com/Wixonic/WalkersChatEvent/releases) [![Last release](https://img.shields.io/github/v/release/Wixonic/WalkersChatEvent?display_name=tag&label=Last%20release&include_prereleases)](https://github.com/Wixonic/WalkersChatEvent/releases)<br />
 [![Wakatime](https://wakatime.com/badge/github/Wixonic/WalkersChatEvent.svg?style=flat)](https://wakatime.com/badge/github/Wixonic/WalkersChatEvent)
 
-- [Wiki](https://github.com/Wixonic/WalkersChatEvent/wiki)
 - [Support](https://github.com/Wixonic/WalkersChatEvent/blob/Default/.github/SUPPORT.md)
 - [Code of Conduct](https://github.com/Wixonic/WalkersChatEvent/blob/Default/.github/CODE_OF_CONDUCT.md)
 
