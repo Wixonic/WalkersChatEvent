@@ -1,5 +1,3 @@
-# W47K3R5 Chat Event
-
 > A custom chat event plugin for Alan Walker's Minecraft server
 
 [![Last stable release](https://img.shields.io/github/v/release/Wixonic/WalkersChatEvent?display_name=tag&label=Last%20stable%20release)](https://github.com/Wixonic/WalkersChatEvent/releases) [![Last release](https://img.shields.io/github/v/release/Wixonic/WalkersChatEvent?display_name=tag&label=Last%20release&include_prereleases)](https://github.com/Wixonic/WalkersChatEvent/releases)<br />
