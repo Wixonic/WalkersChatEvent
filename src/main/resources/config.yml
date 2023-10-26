@@ -31,6 +31,205 @@ questions:
         expires: 10
         reward: 1000
         text: "When Different World has been released? (year)"
+        
+    fade-release:
+        answers:
+            - "2014"
+        expires: 10
+        reward: 1000
+        text: "When Fade has been released? (year)"
+        
+    spectre-release:
+        answers:
+            - "2015"
+        expires: 10
+        reward: 1000
+        text: "When Spectre has been released? (year)"
+    
+    lost-control-release:
+        answers:
+            - "2018"
+        expires: 10
+        reward: 1000
+        text: "When Lost Control has been released? (year)"
+        
+    play-release:
+        answers:
+            - "2019"
+        expires: 10
+        reward: 1000
+        text: "When Play has been released? (year)"
+        
+    end-of-time-release:
+        answers:
+            - "2020"
+        expires: 10
+        reward: 1000
+        text: "When End Of Time has been released? (year)"
+    
+    fake-a-smile-singer:
+        answers:
+            - "Salem Ilese"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in Fake a Smile?"
+        
+    endless-summer-singer:
+        answers:
+            - "Zak Abel"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in Endless Summer?"
+        
+    lost-control-singer:
+        answers:
+            - "Sorana"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in Lost Control?"
+    
+    i-dont-wanna-go-singer:
+        answers:
+            - "Julie Bergan"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in I Don't Wanna Go?"
+        
+    lily-singer:
+        answers:
+            - "Emelie Hollow"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in Lily?"
+        
+    do-it-all-for-you-singer:
+        answers:
+            - "Trevor Guthrie"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in Do It All for You?"
+        
+    different-world-singer:
+        answers:
+            - "Sofia Carson"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in Different World?"
+        
+    diamond-heart-singer:
+        answers:
+            - "Sophia Somajo"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in Diamond Heart?"
+        
+    darkside-singer:
+        answers:
+            - "Au/Ra"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in Darkside?"
+        
+    all-falls-down-singer:
+        answers:
+            - "Juliander"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in All Falls Down?"
+        
+    tired-singer:
+        answers:
+            - "Gavin James"
+        expires: 10
+        reward: 4000
+        text: "Who is the singer in Tired?"
+        
+    faded-singer: # uncredited
+        answers:
+            - "Iselin Solheim"
+        expires: 10
+        reward: 7000
+        text: "Who is the signer in Faded?"
+        
+    sing-me-to-sleep-singer: # uncredited
+        answers:
+            - "Iselin Solheim"
+        expires: 10
+        reward: 7000
+        text: "Who is the signer in Sing Me to Sleep?"
+        
+    alone-singer: # uncredited
+        answers:
+            - "Noonie Bao"
+        expires: 10
+        reward: 7000
+        text: "Who is the signer in Alone?"
+        
+    the-spectre-singer: # uncredited
+        answers:
+            - "Jesper Borgen"
+        expires: 10
+        reward: 7000
+        text: "Who is the signer in The Spectre?"
+        
+    are-you-lonely-artists:
+        answers:
+            - "Steve Aoki"
+            - "ISÁK"
+            - "Omar Noir"
+        expires: 20
+        reward: 1500
+        text: "Alan Walker released Are You Lonely in collaboration with..."
+        
+    different-world-artists:
+        answers:
+            - "Sofia Carson"
+            - "K-391"
+            - "Corsak"
+        expires: 20
+        reward: 1500
+        text: "Alan Walker released Different World (the song) in collaboration with..."
+        
+    play-artists:
+        answers:
+            - "K-391"
+            - "Tungevaag"
+            - "Mangoo"
+        expires: 20
+        reward: 1500
+        text: "Alan Walker released Play in collaboration with..."
+        
+    tired-remixes:
+        answers:
+            - "Alan Walker"
+            - "Alex Skrindo"
+            - "Axollo"
+            - "Bruno Martini"
+            - "Kovan"
+            - "Kygo"
+            - "K-391"
+            - "Lemarroy"
+            - "Steerner"
+            - "Tobu"
+        expires: 30
+        reward: 2000
+        text: "Tired has been remixed by..."
+    
+    first-ncs-songs:
+        answers:
+            - "Fade"
+            - "Force"
+            - "Spectre"
+        expires: 15
+        reward: 1000
+        text: "What was the three first songs Alan published on No Copyright Songs (NCS)?"
+    
+    new-ncs-contract-song:
+        answers:
+            - "Dreamer"
+        expires: 10
+        reward: 3000
+        text: "On April 7, 2023, Alan re-signed with No Copyright Songs (NCS) and released a song, which is called..."
     
     songs-in-walker-racing-league:
         answers:
@@ -41,38 +240,39 @@ questions:
             - "Space Melody"
             - "Sweet Dreams"
         expires: 30
-        reward: 2500
+        reward: 1500
         text: "Gives a song from the Walker Racing League."
+        
+    ghost-death-stranding-soundtrack:
+        answers:
+            - "Death Stranding"
+        expires: 10
+        reward: 4000
+        text: "Ghost is part of the official soundtrack of a game. Which one?"
+        
+    pubg-mobile-songs:
+        answers:
+            - "On My Way"
+            - "Live Fast"
+            - "Paradise"
+            - "Land Of The Heroes"
+        expires: 25
+        reward: 3000
+        text: "Alan has collaborated with PUBG Mobile on some of his songs. Which ones?"
+    
+    four-first-words-alone:
+        answers:
+            - "Lost in your mind"
+        expires: 10
+        reward: 4000
+        text: "What are the four first words in Alone?"
     
     three-first-words-alone-part-ii:
         answers:
             - "We were young"
         expires: 10
-        reward: 7500
-        text: "What are Ava Max's first words in Alone Part II?"
-    
-    fake-a-smile-singer:
-        answers:
-            - "Salem Ilese"
-        expires: 10
-        reward: 3000
-        text: "Who is the singer in Fake a Smile?"
-    
-    first-ncs-songs:
-        answers:
-            - "Fade"
-            - "Force"
-            - "Spectre"
-        expires: 15
-        reward: 1000
-        text: "What was the three first songsAlan published on No Copyright Songs (NCS)?"
-    
-    new-ncs-contract-song:
-        answers:
-            - "Dreamer"
-        expires: 10
         reward: 5000
-        text: "On April 7, 2023, Alan re-signed with No Copyright Songs (NCS) and released a song, which is called..."
+        text: "What are the three first words in Alone Part II?"
     
     w47k3r5:
         answers:
@@ -85,7 +285,7 @@ questions:
         answers:
             - "DJ Walkzz"
         expires: 10
-        reward: 3000
+        reward: 2000
         text: "What is Alan's first nickname?"
 
     alan-full-name:
@@ -94,12 +294,3 @@ questions:
         expires: 10
         reward: 2000
         text: "What is Alan's full name?"
-    
-    are-you-lonely-artists:
-        answers:
-            - "Steve Aoki"
-            - "ISÁK"
-            - "Omar Noir"
-        expires: 10
-        reward: 1500
-        text: "Alan Walker released Are You Lonely in collaboration with..."
