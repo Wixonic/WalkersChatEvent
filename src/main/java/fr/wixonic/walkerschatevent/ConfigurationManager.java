@@ -14,13 +14,7 @@ public final class ConfigurationManager {
 	}
 
 	public void fillDefault() {
-		if (this.config.getKeys(false).isEmpty()) {
-			try {
-				this.config.loadFromString(new String(Objects.requireNonNull(Main.getInstance().getResource("config.yml")).readAllBytes(), StandardCharsets.UTF_8));
-			} catch (Exception e) {
-				throw new RuntimeException(e);
-			}
-		}
+		Main.getInstance().saveDefaultConfig();
 	}
 	
 	public boolean getBoolean(String key) {
