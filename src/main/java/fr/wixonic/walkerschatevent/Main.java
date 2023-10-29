@@ -66,10 +66,9 @@ public final class Main extends JavaPlugin {
 			this.getServer().getPluginManager().disablePlugin(this);
 			return;
 		}
-
+		
+		this.saveDefaultConfig();
 		Main.configManager = new ConfigurationManager(this.getConfig());
-		Main.configManager.fillDefault();
-		this.saveConfig();
 
 		if (Main.configManager.getBoolean("enabled")) Main.loop();
 		this.getServer().getPluginManager().registerEvents(Question.listener, this);
