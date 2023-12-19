@@ -2,7 +2,6 @@ package fr.wixonic.walkerschatevent;
 
 import org.bukkit.configuration.file.FileConfiguration;
 
-import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Objects;
 
@@ -12,7 +11,7 @@ public final class ConfigurationManager {
 	public ConfigurationManager(FileConfiguration pluginConfig) {
 		this.config = pluginConfig;
 	}
-	
+
 	public boolean getBoolean(String key) {
 		return this.config.getBoolean(key);
 	}

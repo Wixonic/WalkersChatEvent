@@ -1,8 +1,10 @@
+.gradle/
+
+bin/
+build/
+gradle/
+
 .DS_Store
 
-.gradle
-.idea
-build
-gradle
 gradlew
 gradlew.bat

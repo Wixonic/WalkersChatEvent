@@ -1,7 +1,6 @@
 package fr.wixonic.walkerschatevent;
 
 import net.milkbowl.vault.economy.Economy;
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -40,12 +39,14 @@ public final class Main extends JavaPlugin {
 
 		if (string.contains("-")) {
 			try {
-				delay = new Random().nextInt(Integer.parseInt(string.split("-")[0]), Integer.parseInt(string.split("-")[1]));
+				delay = new Random().nextInt(Integer.parseInt(string.split("-")[0]),
+						Integer.parseInt(string.split("-")[1]));
 			} catch (Exception ignored) {
 				Main.getInstance().getLogger().warning("Invalid field in config.yml: delay");
 				delay = 1000;
 			}
-		} else delay = Integer.parseInt(string);
+		} else
+			delay = Integer.parseInt(string);
 
 		Main.scheduledExecutor.schedule(() -> {
 			Main.execute();
@@ -66,11 +67,12 @@ public final class Main extends JavaPlugin {
 			this.getServer().getPluginManager().disablePlugin(this);
 			return;
 		}
-		
+
 		this.saveDefaultConfig();
 		Main.configManager = new ConfigurationManager(this.getConfig());
 
-		if (Main.configManager.getBoolean("enabled")) Main.loop();
+		if (Main.configManager.getBoolean("enabled"))
+			Main.loop();
 		this.getServer().getPluginManager().registerEvents(Question.listener, this);
 		Objects.requireNonNull(this.getCommand("chatevent")).setExecutor(new ChatEvent());
 
@@ -78,9 +80,11 @@ public final class Main extends JavaPlugin {
 	}
 
 	private boolean setupEconomy() {
-		if (this.getServer().getPluginManager().getPlugin("Vault") == null) return false;
+		if (this.getServer().getPluginManager().getPlugin("Vault") == null)
+			return false;
 		RegisteredServiceProvider<Economy> rsp = this.getServer().getServicesManager().getRegistration(Economy.class);
-		if (rsp == null) return false;
+		if (rsp == null)
+			return false;
 		Main.economy = rsp.getProvider();
 		return true;
 	}
