@@ -6,7 +6,7 @@
 
 [![Contributors](https://img.shields.io/github/contributors/Wixonic/WalkersChatEvent?color=%2308F&label=Contributors)](https://github.com/Wixonic/WalkersChatEvent/blob/Default/.github/CONTRIBUTING.md)
 [![License](https://img.shields.io/github/license/Wixonic/WalkersChatEvent?color=%23555&label=License)](https://github.com/Wixonic/WalkersChatEvent/blob/Default/LICENSE)
-[![Discord](https://img.shields.io/discord/1020663521530351627?logo=discord&logoColor=94ABFC&label=Discord&color=7289DA)](https://discord.gg/BcXFAVKJZQ)
+[![Discord](https://img.shields.io/discord/1020663521530351627?logo=discord&logoColor=94ABFC&label=Discord&color=7289DA)](https://go.wixonic.fr/discord)
 
 ### Dependencies
 
